@@ -1,0 +1,161 @@
+ /* this for nav bar  */
+ nav{
+    background-color: blueviolet;
+    width: 100%;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+ /* this for nav section */
+section{
+    height: 900px;
+    background-color: rgb(212, 56, 165);
+}
+.container-pr{
+    padding-left: 50px;
+    padding-top: 50px;
+    background-color: black;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-tairan{
+    background-color: rgb(182, 218, 146);
+    width: 800px;
+    background-image: url(/stadium_background.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.all-cart{
+}
+.cart-ST{
+    width: 1000;
+}
+
+.cart{
+    width: 90px;
+    margin: 50px;
+    animation-name:  infiniteupdown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:  ease;
+    transition: all .1s;
+}
+@keyframes infiniteupdown {
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY( 0px);
+    }
+}
+.cart-ST{
+    width: 970px;
+    height: 220px;
+    position: relative;
+    bottom: 100px;
+    left: 80px;
+    
+    
+}
+.cart-CM{
+    width: 670px;
+    height: 220px;
+    position: relative;
+    bottom: 170px;
+    left: 80px;
+    
+    
+}
+.cart-DF{
+    width: 900px;
+    height: 220px;
+    position: relative;
+    bottom: 200px;
+    right: 20px;
+    
+    
+}
+.cart-GK{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 270px;
+    left: 265px;
+    
+}
+.container-player{
+    background-color: chartreuse;
+    width:35%;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+}
+.cart-plers{
+    width: 100px;
+    
+}
+.cart-p{
+    margin: 5px;
+    width: 170px;
+    background-image:url(/téléchargement__1_-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cart-p img{
+    width: 110px;
+    position: relative;
+    left: 32px;
+    top: 30px;
+}
+.cart-p h1{
+   font-size: 15px; 
+   text-align: center;
+   margin-top: 30px;
+   background-color: brown;
+}
+.position{
+    background-color: blue;
+    position: relative;
+    bottom: 170px;
+    left: 25px;
+    text-align: start;
+}
+.position h2{
+    text-align: start;
+    font-size: 10px;
+    height: 10px;
+}    
+.position h1{
+    text-align: start;
+    font-size: 25px;
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* this for nav footer */
+footer{
+    height: 200px;
+    background-color: black;
+}
