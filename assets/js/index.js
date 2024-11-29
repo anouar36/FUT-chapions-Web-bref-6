@@ -1,12 +1,13 @@
 const url = "assets/data/players.json";
 fetch(url)
-.then(response => response.json())
-.then(res=>{
-    const data=res.players;
-    console.log(data)
-    let rows ='';
-    data.forEach(player => {
-        rows+= `<div class="card">
+  .then((response) => response.json())
+  .then((res) => {
+    const data = res.players;
+    console.log(data);
+    let rows = "";
+    data.forEach((player) => {
+      rows += `<div class="olcard">
+        <div class="just-cart">
             <div class="card-header">
                 <div class="rating">${player.rating}</div>
                 <div class="position">${player.position}</div>
@@ -28,17 +29,17 @@ fetch(url)
                 <div class="logo"> <img src="${player.flag}" alt=""></div>
             </div>
         </div>
-        </div>`
-    })
-    console.log(rows)
-    document.getElementById('container-player').innerHTML=rows;
-    
-})
-.catch(error => console.log(error));
+        </div>
+        </div>`;
+    });
+    console.log(rows);
+    document.getElementById("container-ollPlyers").innerHTML = rows;
+  })
+  .catch((error) => console.log(error));
 
 // foction for  form
 
-const nameInput = document.getElementById("name");
+const nameInput = document.getElementById("nameR");
 const ageInput = document.getElementById("age");
 const rankInput = document.getElementById("ranck");
 
@@ -73,15 +74,13 @@ function butNonForm() {
   const formul = document.getElementById("formul");
   console.log(formul);
   formul.classList.add("DN");
-  console.log()
+  console.log();
 }
-function addp(){
-    var addFormul= document.getElementById('addp')
-    const formul = document.getElementById("formul");
-    formul.classList.remove("DN");
-  console.log()
-
-
+function addp() {
+  var addFormul = document.getElementById("addp");
+  const formul = document.getElementById("formul");
+  formul.classList.remove("DN");
+  console.log();
 }
 
 const nameRegex = /^[A-Za-z][A-Za-z ]{0,19}$/;
@@ -104,76 +103,33 @@ function altt() {
   } else {
     alert("rank is not corecte");
   }
-
-//   if (rankRegex.test(powersInputs.value)) {
-//     alert("pac is corecte");
-//   } else {
-//     alert("pawers is not corecte");
-//   }
 }
 
 // add object for form
-// let arr =[];
-// const palyerss = {
-//     firstName: document.getElementById('name').value,
-//     lastName: document.getElementById('pas').value,
-//     age: document.getElementById('dri').value,
-//     city: document.getElementById('def').value,
-//     occupation: document.getElementById('phy').value,
-//     hobbies: document.getElementById('iimage3').value,
-//     isMarried: document.getElementById('iimage2').value,
-//     languages: document.getElementById('iimage').value,
-//     languages: document.getElementById('position').value,
-//     languages: document.getElementById('ranck').value,
-//     languages: document.getElementById('age').value
-//   };
-//   console.log(palyerss.firstName)
+let arrDataPlyers = [];
+function addInLocal() {
+  const palyerss = {
+    Name: document.getElementById("nameR").value,
+    pas: document.getElementById("pas").value,
+    dri: document.getElementById("dri").value,
+    def: document.getElementById("def").value,
+    phy: document.getElementById("phy").value,
+    imge1: document.getElementById("iimage3").value,
+    imge2: document.getElementById("iimage2").value,
+    imge3: document.getElementById("iimage").value,
+    position: document.getElementById("position").value,
+    ranck: document.getElementById("ranck").value,
+    agelanguages: document.getElementById("age").value,
+  };
 
- 
-//   function addInLocal(){
-//     localStorage.setItem('values', JSON.stringify(palyerss))
-//   }
-const inputField = document.getElementById('nameR');
+  arrDataPlyers.push(palyerss);
+  localStorage.setItem("values", JSON.stringify(arrDataPlyers));
 
-addEventListener('input', () => {
-    const palyerss = {
-            firstName:inputField.value,
-            lastName: document.getElementById('pas').value,
-            age: document.getElementById('dri').value,
-            city: document.getElementById('def').value,
-            occupation: document.getElementById('phy').value,
-            hobbies: document.getElementById('iimage3').value,
-            isMarried: document.getElementById('iimage2').value,
-            languages: document.getElementById('iimage').value,
-            languages: document.getElementById('position').value,
-            languages: document.getElementById('ranck').value,
-            languages: document.getElementById('age').value
-          };
-            console.log(palyerss)
+  console.log(localStorage.getItem("values", palyerss.firstName));
 
-});
-//   let firstName = document.getElementById("nameR");
-//   console.log(inputField.value)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  function dsplyFeomloclal() {
+    let getdat = localStorage.getItem("values", palyerss);
+    let dataLoc = JSON.parse(getdat);
+  }
+  dsplyFeomloclal();
+}
