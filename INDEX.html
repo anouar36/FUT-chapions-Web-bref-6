@@ -3,74 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/assets/stylesheet/index.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <div class="navbar"></div>
+        <div class="navbar">
+            <div class="logo">MyLogo</div>
+            <div class="nav-links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
     </nav>
     <section>
 
         <div class="container-pr">
-
+            
             <div class="container-tairan">
+               
+                <div class="butoonAddplayers"><button id="addp" class="btn2" type="button" onclick="addp()">Add Plyaers</button></div>
+                
+                    <form class="DN" id="formul" >
+                        <button class="" type="button"  onclick="butNonForm()">X</button>
+                        <div class="DEV1">
+                          <div class="input">
+                            <label for="name">Name44:</label>
+                            <input class="input1" type="text" aria-live="polite"  id="nameR" name="user_name" />
+                          </div>
+                  
+                          <div class="input">
+                            <label for="age">AGE DE PALYER:</label>
+                            <input class="input1" type="number" id="age" RANCK="user_number"   />
+                          </div>
+                  
+                          <div class="input">
+                            <label for="ranck">RANCK:</label>
+                            <input class="input1" type="number" id="ranck" RANCK="user_number" />
+                          </div>
+                          <div class="input">
+                            <label for="position">PAOSITION:</label>
+                            <input class="input1" type="number" id="position" RANCK="user_number" />
+                          </div>
+                  
+                          <div id="inputImges" class="input">
+                            <label for="iimage"
+                              ><img class="img" id="selectimge" src="/assets/images/add-image-1-128.png" alt=""
+                            /></label>
+                            <input
+                              type="file"
+                              id="iimage"
+                              name="fileInput"
+                              accept="image/*"
+                              onchange="handelChange()"
+                            />
+                  
+                            <label for="iimage2"
+                              ><img id="selectimge2" class="img" src="/assets/images/add-image-1-128.png" alt=""
+                            /></label>
+                            <input
+                              type="file"
+                              id="iimage2"
+                              name="fileInput2"
+                              accept="image/*"
+                              onchange="handelChang()"
+                            />
+                  
+                            <label for="iimage3"
+                              ><img id="selectim3" class="img" src="/assets/images/add-image-1-128.png" alt=""
+                            /></label>
+                            <input
+                              type="file"
+                              id="iimage3"
+                              name="fileInput3"
+                              accept="image/*"
+                              onchange="handelChan()"
+                            />
+                          </div>
+                        </div>
+                  
+                        <div class="DEV2">
+                          <div class="input2">
+                            <label for="pac">PAC:</label>
+                            <input class="in2" type="text" id="pac" name="user_name" />
+                          </div>
+                  
+                          <div class="input2">
+                            <label for="sho">SHO:</label>
+                            <input class="in2" type="number" id="sho" RANCK="user_number" />
+                          </div>
+                  
+                          <div class="input2">
+                            <label for="pas">PAS:</label>
+                            <input class="in2" type="number" id="pas" RANCK="user_number" />
+                          </div>
+                          <div class="input2">
+                            <label for="dri">DRI:</label>
+                            <input class="in2" type="number" id="dri" RANCK="user_number" />
+                          </div>
+                  
+                          <div class="input2">
+                            <label for="def">DEF:</label>
+                            <input class="in2"  type="number" id="def" RANCK="user_number" />
+                          </div>
+                          <div class="input2">
+                            <label for="phy">PHY:</label>
+                            <input class="in2" type="number" id="phy" RANCK="user_number" />
+                          </div>
+                        </div>
+                        <button class="submi" type="button" >SEND</button>
+                </form>
+                <div>
+                    <img src="/assets/images/field-bg.svg" alt="">
+                </div>
+                
+               
                 <ul class="all-cart">
 
                     <li class="cart-ST"> 
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
                     </li>
 
                     <li class="cart-CM"> 
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
                     </li>
 
                     <li class="cart-DF"> 
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
                     </li>
                     <li class="cart-GK"> 
-                        <img class="cart" src="/téléchargement__1_-removebg-preview.png" alt="">
+                        <img class="cart" src="/assets/images/téléchargement__1_-removebg-preview.png" alt="">
                     </li>
-                    
-                </ul>
-            </div>
 
-            <div class="container-player">
-               
-                    <div class="cart-p"> 
-                       <img src="https://cdn.sofifa.net/players/158/023/25_120.png" alt="">                   
-                       <h1>Lionel Messi</h1> : "",
-                       <div class="position">
-                        <h1>90</h1>
-                        <h2>RW</h2> 
-                    </div>
-                       <div>nationality</div>
-                       <div>flag</div>
-                       <div>club</div>
-                       <div>logo</div>
-                       <div>rating</div>
-                       <div>pace</div>
-                       <div>shooting</div>
-                       <div>passing</div>
-                       <div>dribbling</div>
-                       <div>defending</div>
-                       <div>physical</div> 
-                    </div>
-                   
-                </div>
-                
+                </ul>
+
             </div>
+       <div class="formul-htyat"><img src="/assets/images/example_1.png" alt=""></div>
         </div>
+        <div id="container-player" class="container-player"></div>
     </section>
-    <footer>
-        <div class="container-footer"></div>
-    </footer>
+
+    
+
+    
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>

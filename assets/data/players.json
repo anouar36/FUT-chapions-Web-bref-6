@@ -39,7 +39,7 @@
         "nationality": "Belgium",
         "flag": "https://cdn.sofifa.net/flags/be.png",
         "club": "Manchester City",
-        "logo": "https://cdn.sofifa.net/players/239/085/25_120.png",
+        "logo": "https://cdn.sofifa.net/meta/team/9/60.png",
         "rating": 91,
         "pace": 74,
         "shooting": 86,
@@ -240,22 +240,7 @@
         "defending": 45,
         "physical": 88
       },
-      {
-        "name": "N'Golo Kanté",
-        "photo": "https://cdn.sofifa.net/players/215/914/25_120.png",
-        "position": "CDM",
-        "nationality": "France",
-        "flag": "https://cdn.sofifa.net/flags/fr.png",
-        "club": "Al-Ittihad",
-        "logo": "https://cdn.sofifa.net/meta/team/476/120.png",
-        "rating": 87,
-        "pace": 77,
-        "shooting": 66,
-        "passing": 75,
-        "dribbling": 82,
-        "defending": 88,
-        "physical": 82
-      },
+      
       {
         "name": "Alphonso Davies",
         "photo": "https://cdn.sofifa.net/players/234/396/25_120.png",
@@ -320,21 +305,7 @@
         "defending": 34,
         "physical": 63
       },
-      {
-        "name": "Trent Alexander-Arnold",
-        "photo": "https://cdn.sofifa.net/players/231/281/25_120.png",
-        "position": "RB",
-        "nationality": "England",
-        "flag": "https://cdn.sofifa.net/flags/gb-eng.png",
-        "club": "Liverpool",
-        "rating": 87,
-        "pace": 76,
-        "shooting": 66,
-        "passing": 89,
-        "dribbling": 80,
-        "defending": 79,
-        "physical": 71
-      },
+      
       {
         "name": "Achraf Hakimi",
         "photo": "https://cdn.sofifa.net/players/235/212/25_120.png",
@@ -398,23 +369,8 @@
         "dribbling": 86,
         "defending": 55,
         "physical": 84
-      },
-      {
-        "name": "Gianluigi Donnarumma",
-        "photo": "https://cdn.sofifa.net/players/230/621/25_120.png",
-        "position": "GK",
-        "nationality": "Italy",
-        "flag": "https://cdn.sofifa.net/flags/it.png",
-        "club": "Paris Saint-Germain",
-        "logo": "https://cdn.sofifa.net/meta/team/591/120.png",
-        "rating": 89,
-        "diving": 88,
-        "handling": 84,
-        "kicking": 75,
-        "reflexes": 90,
-        "speed": 50,
-        "positioning": 85
       }
+      
     ]
   }
   

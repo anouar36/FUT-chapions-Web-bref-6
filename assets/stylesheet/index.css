@@ -1,16 +1,36 @@
  /* this for nav bar  */
- nav{
-    background-color: blueviolet;
-    width: 100%;
-    height: 100px;
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ body{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
 }
+ 
+ * {
+    font-family: myFirstFont;
+ }
 
-
-
-
-
-
-
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b9c1ca;
+    padding: 10px 20px;
+    color: white;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  .navbar .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .navbar .nav-links {
+    display: flex;
+  }
 
  /* this for nav section */
 section{
@@ -20,32 +40,56 @@ section{
 .container-pr{
     padding-left: 50px;
     padding-top: 50px;
-    background-color: black;
-    height: 900px;
+    background-color: rgb(11, 122, 111);
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
+
 .container-tairan{
-    background-color: rgb(182, 218, 146);
-    width: 800px;
-    background-image: url(/stadium_background.webp);
+    background-color: rgb(6, 16, 16);
+    width: 894px;
+    height: 50rem;
+    background-image: url(/asets/images/field-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    
+
 }
-.all-cart{
+.butoonAddplayers{
+    background-color: black;;
+    height: 50px;
+    width: 100%;
+    align-items: end;
+    /* margin-left: 90% ; */
 }
+.btn2{
+   
+background: red;
+align-items: end;
+width:10%;
+height: 2rem;
+position: relative;
+top: 35%;
+left: 90%;
+}
+
 .cart-ST{
     width: 1000;
 }
 
 .cart{
-    width: 90px;
+    width: 120px;
     margin: 50px;
     animation-name:  infiniteupdown;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function:  ease;
     transition: all .1s;
+    position:inherit;
+    bottom: 650px;
+    left: 4%;
+
 }
 @keyframes infiniteupdown {
     0% {
@@ -63,16 +107,17 @@ section{
     height: 220px;
     position: relative;
     bottom: 100px;
-    left: 80px;
+    left: 33px;
     
     
 }
 .cart-CM{
+    
     width: 670px;
     height: 220px;
     position: relative;
-    bottom: 170px;
-    left: 80px;
+    bottom: 150px;
+    left: 45px;
     
     
 }
@@ -80,8 +125,8 @@ section{
     width: 900px;
     height: 220px;
     position: relative;
-    bottom: 200px;
-    right: 20px;
+    bottom: 170px;
+    right: 60px;
     
     
 }
@@ -89,36 +134,150 @@ section{
     width: 200px;
     height: 200px;
     position: relative;
-    bottom: 270px;
-    left: 265px;
-    
+    bottom: 280px;
+    left: 305px;
+    border: red solid 2px;
+
 }
 .container-player{
-    background-color: chartreuse;
-    width:35%;
+    
+    background-color: rgb(136, 26, 26);
+    height: auto;
     display: flex;
     flex-wrap: wrap;
    
     
 }
-.cart-plers{
-    width: 100px;
+.card{
+    width: 150px;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-image:url(/assets/images/badge_gold.webp);
+    background-size:cover;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    border: red solid 2px;
+
+}
+.player-image{
+    position: relative;
+    right: 12px;
+    top: 17px;
+    padding-top: 2px;
+    
+
+
+}
+.player-name{
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    border: red solid 2px;
+
+    
+
+}
+.card-header{
+    height: 40px;
+    padding-top: 40px;
+    position: relative;
+    left: 10px;
+    border: red solid 2px;
+
+    
+
+}
+.player-stats{
+    display: flex;
+    width: 200PX;
+    height: 20px;
+    justify-content: center;
+    border: red solid 2px;
+
+}
+.stat{
+    text-align: center;
+    font-size: 8px;
+    height: 20px;
+    width: 20px;
+    border: red solid 2px;
+
+}
+.card-footer{
+    display: flex;
+    border: red solid 2px;
+    width: 200px;
+    height: 15px;
+    justify-content: center;
+    justify-content: space-evenly;
+
     
 }
-.cart-p{
-    margin: 5px;
-    width: 170px;
-    background-image:url(/téléchargement__1_-removebg-preview.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+.logo{
+    border: red solid 2px;
+
 }
-.cart-p img{
-    width: 110px;
+.logo img{
+    width: 12px;
+    border: red solid 2px;
+}
+.formul-htyat{
+    background-color: rgb(13, 16, 197);
+    width: 30%;
+}
+.formul-htyat img{
+    width: 150px;
+}
+.addplyers ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+li{
+    border:  2px red solid;
+}
+h1{
+    border: 2px solid red;
+}
+.addplyers{
+    background-color: rgba(130, 124, 124, 0.555);
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    z-index: 1;
+    top: 12rem;
+    border-radius: 12px;
+    left: 16.3rem;
+    padding: 10px;
+
+   
+}
+
+.sub{
+    height: 20px;
+    width: 150px;
     position: relative;
-    left: 32px;
-    top: 30px;
+    left: 0;
+   border-radius: 10px;
 }
-.cart-p h1{
+div{
+}
+
+
+
+
+
+
+/* .cart-p img{
+    width: 140px;
+    position: relative;
+    left: 19px;
+    top: 19px;
+} */
+/* .cart-p h1{
    font-size: 15px; 
    text-align: center;
    margin-top: 30px;
@@ -128,18 +287,34 @@ section{
     background-color: blue;
     position: relative;
     bottom: 170px;
+    margin-top: 6;
     left: 25px;
     text-align: start;
 }
-.position h2{
+.cart-p h2{
+    position: relative;
+    bottom: 232px;
+    left: 25px;
     text-align: start;
-    font-size: 10px;
-    height: 10px;
+    font-size: 12px;
+    height: 1px;
 }    
-.position h1{
+#retain{
+    font-size: 15px; 
+    position: relative ;
+    bottom: 209px;
+    left: 21px;
+    text-align: center;
+    -color: rgb(255, 14, 14);
     text-align: start;
     font-size: 25px;
 }    
+.name{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 7px;
+    margin-top: 15px;
+} */
 
 
 
@@ -159,3 +334,120 @@ footer{
     height: 200px;
     background-color: black;
 }
+
+
+
+/* form */
+:root {
+    --colorTexteForm: wheat;
+  }
+  body {
+    font-family: "Fira Sans Extra Condensed", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  form {
+    margin-left: 300px;
+    background-image: url(/assets/images/fifa-mobile-grid-tile-season-5-16x9-1.jpg.adapt.crop191x100.1200w.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    border-radius: 12px;
+    position: absolute;
+    z-index: 1;
+    color: var(--colorTexteForm);
+  }
+  .DEV1 {
+    display: flex;
+    padding: 12px;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 20px;
+    flex-direction: row;
+    height: 40%;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .input {
+    border-radius: 3px;
+    width: 40%;
+    height: 4rem;
+    background-color: rgba(240, 234, 234, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .input1 {
+    border-radius: 3px;
+    background-color: brown;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40%;
+  }
+  .img {
+    width: 60px;
+    box-shadow: 20px 10px 20px 20px rgb(119, 114, 114) inset;
+  }
+  #iimage {
+    background-color: aqua;
+    width: 12px;
+    display: none;
+  }
+  #inputImges {
+    width: 300px;
+    display: flex;
+    column-gap: 30px;
+  }
+  #iimage2 {
+    background-color: aqua;
+    width: 12px;
+    display: none;
+  }
+  #inputImges2 {
+    width: 300px;
+    display: flex;
+    column-gap: 30px;
+  }
+  #iimage3 {
+    background-color: aqua;
+    width: 12px;
+    display: none;
+  }
+  .DN {
+    display: none;
+  }
+  .DEV2 {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    height: 40%;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .input2 {
+    width: 70px;
+    border-radius: 3px;
+    height: 45px;
+    background-color: rgba(248, 248, 248, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .in2 {
+    border-radius: 3px;
+    width: 40px;
+  }
+  .submi{
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+  }
+  
+  
