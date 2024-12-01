@@ -19,7 +19,7 @@
       {
         "name": "Cristiano Ronaldo",
         "photo": "https://cdn.sofifa.net/players/020/801/25_120.png",
-        "position": "ST",
+        "position": "CF",
         "nationality": "Portugal",
         "flag": "https://cdn.sofifa.net/flags/pt.png",
         "club": "Al Nassr",
@@ -51,7 +51,7 @@
       {
         "name": "Kylian Mbappé",
         "photo": "https://cdn.sofifa.net/players/231/747/25_120.png",
-        "position": "ST",
+        "position": "CF",
         "nationality": "France",
         "flag": "https://cdn.sofifa.net/flags/fr.png",
         "club": "Real Madrid",
@@ -211,7 +211,7 @@
       {
         "name": "Karim Benzema",
         "photo": "https://cdn.sofifa.net/players/165/153/25_120.png",
-        "position": "ST",
+        "position": "CF",
         "nationality": "France",
         "flag": "https://cdn.sofifa.net/flags/fr.png",
         "club": "Al-Ittihad",
@@ -227,7 +227,7 @@
       {
         "name": "Erling Haaland",
         "photo": "https://cdn.sofifa.net/players/239/085/25_120.png",
-        "position": "ST",
+        "position": "CF",
         "nationality": "Norway",
         "flag": "https://cdn.sofifa.net/flags/no.png",
         "club": "Manchester City",
@@ -325,7 +325,7 @@
       {
         "name": "Youssef En-Nesyri",
         "photo": "https://cdn.sofifa.net/players/235/410/25_120.png",
-        "position": "ST",
+        "position": "CF",
         "nationality": "Morocco",
         "flag": "https://cdn.sofifa.net/flags/ma.png",
         "club": "Fenerbahçe",

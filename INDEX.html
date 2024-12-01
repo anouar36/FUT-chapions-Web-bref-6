@@ -19,13 +19,9 @@
       </div>
     </nav>
     <section>
-      
       <div class="container-pr">
-        
-        <div class="container-tairan">
-          
+        <div class="container-tairan" >
           <div class="butoonAddplayers">
-            
             <button id="addp" class="btn2" type="button" onclick="addp()">
               Add Plyaers
             </button>
@@ -66,7 +62,7 @@
               </div>
               <div class="input">
                 <label for="position">PAOSITION:</label>
-                <select id="position"  class="input1" name="cars" id="cars">
+                <select id="position" class="input1" name="cars" id="cars">
                   <option value="CF">CF</option>
                   <option value="LWF">LWF</option>
                   <option value="RWF">RWF</option>
@@ -78,11 +74,6 @@
                   <option value="RB">RB</option>
                   <option value="LB">LB</option>
                   <option value="GK">GK</option>
-
-
-
-
-
                 </select>
               </div>
 
@@ -163,81 +154,76 @@
                 <input class="in2" type="number" id="phy" RANCK="user_number" />
               </div>
             </div>
-            <button class="submi" type="button" onclick="addInLocal(), verfiction() ">
+            <button
+              class="submi"
+              type="button"
+              onclick="addInLocal(), verfiction() "
+            >
               SEND
             </button>
           </form>
 
+          <div class="contair-pransipal">
+            <div class="imge-bg">
+              <img src="/assets/images/field-bg.svg" alt="" />
 
+              <div class="container-cart">
+                <div class="attack">
+                  <div id="LWF" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
 
-<div class="contair-pransipal">
-  
-  
- 
-<div class="imge-bg">
- <img src="/assets/images/field-bg.svg" alt="" />
+                  <div id="CF" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
 
- <div class="container-cart">
-  <div class="attack">
- <div id="LWF" class="dfr">
-  <div class="cart"></div>
- </div>
+                  <div id="RWF" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+                </div>
 
- <div id="CF" class="dfr">
-  <div class="cart"></div>
- </div>
+                <div class="cm">
+                  <div id="CM1" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
 
- <div id="RWF" class="dfr">
-  <div class="cart"></div>
- </div>
-</div>
+                  <div id="DMF" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
 
-<div class="cm">
+                  <div id="CM2" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+                </div>
+                <div class="df">
+                  <div id="LB" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+                  <div id="CB1" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
 
-  <div id="CM1" class="dfr">
-   <div class="cart"></div>
-  </div>
+                  <div id="CB2" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
 
-  <div id="DMF" class="dfr">
-   <div class="cart"></div>
-  </div>
-
-  <div id="CM2" class="dfr">
-   <div class="cart"></div>
-  </div>
- </div>
-
- <div class="df">
-  <div id="LB" class="dfr">
-   <div class="cart"></div>
-  </div>
-
-  <div  id="CB1" class="dfr">
-   <div class="cart"></div>
-  </div>
-
-  <div  id="CB2" class="dfr" >
-   <div class="cart"></div>
-  </div>
-
-  <div id="RB" class="dfr" >
-    <div  class="cart"></div>
-   </div>
- </div>
-
- <div id="GK" class="GK ">
-  <div>
-    <div class="cart ">  </div>
-   </div>
- </div>
-</div>
-</div>
-<div id="containerChangement" class="container-changement">  
-  
-</div>
-<div id="container-ollPlyers" class="container-ollPlyers"></div>
-
-</div>
+                  <div id="RB" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+                </div>
+<div id="GK" >
+                <div onclick="slector1(this)" class="GK">
+                  <div class="cart" >
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div id="containerChangement" class="container-changement"></div>
+            <div id="container-ollPlyers" class="container-ollPlyers"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="/assets/js/index.js"></script>

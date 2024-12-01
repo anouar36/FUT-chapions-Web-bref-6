@@ -1,12 +1,13 @@
 const url = "assets/data/players.json";
+let data;
 fetch(url)
   .then((response) => response.json())
   .then((res) => {
-    const data = res.players;
+    data = res.players;
     console.log(data);
     let rows = "";
     data.forEach((player) => {
-      rows += `<div class="olcard">
+      rows += `<div class="olcard" >
         <div class="just-cart">
             <div class="card-header">
                 <div class="rating">${player.rating}</div>
@@ -82,7 +83,7 @@ function addp() {
   formul.classList.remove("DN");
   console.log();
 }
-// VERFICTION 
+// VERFICTION
 const nameRegex = /^[A-Za-z][A-Za-z ]{0,19}$/;
 const ageRegex = /^(1[8-9]|[2-4][0-9]|5[0-5])$/;
 const rankRegex = /^(3[0-9]|[4-9][0-9])$/;
@@ -131,13 +132,12 @@ function addInLocal() {
     let getdat = localStorage.getItem("values");
     let dataLoc = JSON.parse(getdat);
 
-    function dsplyPlyer(){
-  const containeriChangemo = document.getElementById("containerChangement");
-  containeriChangemo.innerHTML = "";
-  
-      
-      dataLoc.forEach(player =>{
-        const htmltxte=`<div class="olcardS">
+    function dsplyPlyer() {
+      const containeriChangemo = document.getElementById("containerChangement");
+      containeriChangemo.innerHTML = "";
+
+      dataLoc.forEach((player) => {
+        const htmltxte = `<div class="olcardS">
       <div class="just-carte">
           <div class="card-headere">
               <div class="ratinge">${player.ranck}</div>
@@ -161,86 +161,159 @@ function addInLocal() {
           </div>
       </div>
       </div>
-      </div>`
+      </div>`;
         console.log(player);
-        const gk = document.getElementById("GK"); 
+        const gk = document.getElementById("GK");
         const cb1 = document.getElementById("CB1");
         const cb2 = document.getElementById("CB2");
-        const lb = document.getElementById("LB"); 
-        const rb = document.getElementById("RB"); 
-        const cm1 = document.getElementById("CM1"); 
-        const cf = document.getElementById("CF"); 
-        const rwf = document.getElementById("RWF"); 
-        const lwf = document.getElementById("LWF"); 
-        const dmf = document.getElementById("DMF"); 
-        const cm2 = document.getElementById("CM2");       
-    
-      if(player.position === 'GK' && !gk.classList.contains("full")){
-      gk.classList.remove("cart"); 
-      gk.classList.add("full");
-      gk.innerHTML = htmltxte ;
-      } else if(player.position === 'CB1' && !cb1.classList.contains("full") ){  
-           cb1.classList.remove("cart"); 
-           cb1.classList.add("full");
-           cb1.innerHTML = htmltxte;
-           }
-           else if(player.position === 'CB2' && !cb2.classList.contains("full")){
-               const cb2 = document.getElementById("CB2");  
-               cb2.classList.remove("cart"); 
-               cb2.classList.add("full");
-               cb2.innerHTML= htmltxte;
-               }else if(player.position === 'LB' && !lb.classList.contains("full")){
-             lb.classList.remove("cart"); 
-             lb.classList.add("full");
-             lb.innerHTML= htmltxte;
-             }else if(player.position === 'RB'&& !rb.classList.contains("full")){
-              rb.classList.remove("cart"); 
-              rb.classList.add("full");
-              rb.innerHTML= htmltxte;
-             }          else if(player.position === 'CM1' && !cm1.classList.contains("full")){
-              cm1.classList.remove("cart"); 
-              cm1.classList.add("full");
-              cm1.innerHTML= htmltxte;
-                   } else if(player.position === 'CM2' && !cm2.classList.contains("full")){
-                cm2.classList.remove("cart"); 
-                cm2.classList.add("full");
-                cm2.innerHTML= htmltxte;
-                }else if(player.position === 'DMF' && !dmf.classList.contains("full")){
-                  dmf.classList.remove("cart"); 
-                  dmf.classList.add("full");
-                  dmf.innerHTML= htmltxte;
-                  
-                  }else if(player.position === 'LWF' && !lwf.classList.contains("full")){
-                    lwf.classList.remove("cart"); 
-                    lwf.classList.add("full");
-                    lwf.innerHTML= htmltxte;
-                    }else if(player.position === 'RWF' && !rwf.classList.contains("full")){
-                      rwf.classList.remove("cart"); 
-                      rwf.classList.add("full");
-                      rwf.innerHTML= htmltxte;
-                      }else if(player.position === 'CF' && !cf.classList.contains("full")){
-                        cf.classList.remove("cart"); 
-                        cf.classList.add("full");
-                        cf.innerHTML= htmltxte;
-                        }else {
-                          const containeriChangemo= document.getElementById("containerChangement")
-                          if (!document.getElementById(`player-${player.Name}`)) {
-                            containeriChangemo.innerHTML += htmltxte;
-                          }
-                        }
-                  } )             
+        const lb = document.getElementById("LB");
+        const rb = document.getElementById("RB");
+        const cm1 = document.getElementById("CM1");
+        const cf = document.getElementById("CF");
+        const rwf = document.getElementById("RWF");
+        const lwf = document.getElementById("LWF");
+        const dmf = document.getElementById("DMF");
+        const cm2 = document.getElementById("CM2");
 
+        if (player.position === "GK" && !gk.classList.contains("full")) {
+          gk.classList.remove("cart");
+          gk.classList.add("full");
+          gk.innerHTML = htmltxte;
+        } else if (
+          player.position === "CB1" &&
+          !cb1.classList.contains("full")
+        ) {
+          cb1.classList.remove("cart");
+          cb1.classList.add("full");
+          cb1.innerHTML = htmltxte;
+        } else if (
+          player.position === "CB2" &&
+          !cb2.classList.contains("full")
+        ) {
+          const cb2 = document.getElementById("CB2");
+          cb2.classList.remove("cart");
+          cb2.classList.add("full");
+          cb2.innerHTML = htmltxte;
+        } else if (player.position === "LB" && !lb.classList.contains("full")) {
+          lb.classList.remove("cart");
+          lb.classList.add("full");
+          lb.innerHTML = htmltxte;
+        } else if (player.position === "RB" && !rb.classList.contains("full")) {
+          rb.classList.remove("cart");
+          rb.classList.add("full");
+          rb.innerHTML = htmltxte;
+        } else if (
+          player.position === "CM1" &&
+          !cm1.classList.contains("full")
+        ) {
+          cm1.classList.remove("cart");
+          cm1.classList.add("full");
+          cm1.innerHTML = htmltxte;
+        } else if (
+          player.position === "CM2" &&
+          !cm2.classList.contains("full")
+        ) {
+          cm2.classList.remove("cart");
+          cm2.classList.add("full");
+          cm2.innerHTML = htmltxte;
+        } else if (
+          player.position === "DMF" &&
+          !dmf.classList.contains("full")
+        ) {
+          dmf.classList.remove("cart");
+          dmf.classList.add("full");
+          dmf.innerHTML = htmltxte;
+        } else if (
+          player.position === "LWF" &&
+          !lwf.classList.contains("full")
+        ) {
+          lwf.classList.remove("cart");
+          lwf.classList.add("full");
+          lwf.innerHTML = htmltxte;
+        } else if (
+          player.position === "RWF" &&
+          !rwf.classList.contains("full")
+        ) {
+          rwf.classList.remove("cart");
+          rwf.classList.add("full");
+          rwf.innerHTML = htmltxte;
+        } else if (player.position === "CF" && !cf.classList.contains("full")) {
+          cf.classList.remove("cart");
+          cf.classList.add("full");
+          cf.innerHTML = htmltxte;
+        } else {
+          const containeriChangemo = document.getElementById(
+            "containerChangement"
+          );
+          if (!document.getElementById(`player-${player.Name}`)) {
+            containeriChangemo.innerHTML += htmltxte;
+          }
+        }
+      });
     }
 
     dsplyPlyer();
   }
   dsplyFeomloclal();
-  
-  
-
-
-
-
 }
 
+let slectioCart;
+let playercard ; 
+function slector1(mptycard) {
+  console.log(mptycard.parentElement.id);
+  playercard =  mptycard.closest(".cart")
+  scroll({
+    behavior:"smooth",
+    top:10000,
+  })
+  positiondatafilter(mptycard.parentElement.id);
+  slectioCart = true;
+}
+function positiondatafilter(player) {
+  document.getElementById("container-ollPlyers").innerHTML = "";
+  for (let ele of data) {
+    if (ele.position == player.slice(0, 2)) {
+      console.log("kamal");
+      let fltertInfo = `<div class="olcard" onclick="hh()">
+        <div class="just-cart">
+            <div class="card-header">
+                <div class="rating">${ele.rating}</div>
+                <div class="position">${ele.position}</div>
+            </div>
+            <div class="player-image">
+                <img src="${ele.photo}" alt="Lionel Messi">
+            </div>
+            <div class="player-name">${ele.name}</div>
+            <div class="player-stats">
+                <div class="stat"><span>PAC <br></span>${ele.pace}</div>
+                <div class="stat"><span>SHO<br></span>${ele.shooting}</div>
+                <div class="stat"><span>PAS<br></span> ${ele.passing}</div>
+                <div class="stat"><span>DRI<br></span>${ele.dribbling}</div>
+                <div class="stat"><span>DEF<br></span> ${ele.defending}</div>
+                <div class="stat"><span>PHY<br></span> ${ele.physical}</div>
+            </div>
+            <div class="card-footer">
+                <div class="logo"><img src="${ele.logo}" alt=""> </div>
+                <div class="logo"> <img src="${ele.flag}" alt=""></div>
+            </div>
+        </div>
+        </div>
+        </div>`;
+      document.getElementById("container-ollPlyers").innerHTML += fltertInfo;
+    }
+  }
+ 
+  
+}
+function hh(){
+  scroll({
+    behavior:"smooth",
+    top:0,
+  })
+ 
+}
+document.getElementById("container-ollPlyers").addEventListener("click",function(e){
+  console.log(e.target.closest(".olcard")) 
+  playercard.appendChild(e.target.closest(".olcard"))
+})
 

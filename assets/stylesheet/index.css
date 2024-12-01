@@ -2,7 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
   font-family: "Fira Sans Extra Condensed", sans-serif;
-  background-color: black;
+  background-color: rgb(223, 0, 0);
+  font-family: "Fira Sans Extra Condensed", serif;
+  font-weight: 500;
+  font-style: normal;
+  background-image: url(/assets/images/[4K]\ Palm\ Tree\ Loop\ -\ Glowing\ Tubes\ -\ SICK\ Visuals.mp4);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 * {
@@ -40,24 +46,13 @@ body {
 }
 
 /* this for nav section */
-section {
-  height: 900px;
-}
-
 
 
 /* form */
 :root {
   --colorTexteForm: wheat;
 }
-body {
-  font-family: "Fira Sans Extra Condensed", serif;
-  font-weight: 500;
-  font-style: normal;
-  background-image: url(/assets/images/[4K]\ Palm\ Tree\ Loop\ -\ Glowing\ Tubes\ -\ SICK\ Visuals.mp4);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 form {
   margin-left: 300px;
   background-image: url(/assets/images/fifa-mobile-grid-tile-season-5-16x9-1.jpg.adapt.crop191x100.1200w.png);
@@ -164,12 +159,13 @@ form {
 
 .contair-pransipal {
   display: flex;
+height: 2px;  
   gap: 10px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .container-changement {
-  height: 45.4rem;
+  height: auto;
   width: 30rem;
   
 }
@@ -186,6 +182,7 @@ form {
   background-image: url(/assets/images/badge_gold.webp);
   background-size: cover;
   padding-bottom: 10px;
+  background: #000;
 }
 .attack {
   padding: 10px;
@@ -221,6 +218,7 @@ form {
   width: auto;
   display: flex;
   justify-content: space-around;
+  background-color: #d14141;
 }
 
 
@@ -234,8 +232,7 @@ form {
   justify-content: space-evenly;
 }
 .container-ollPlyers{
-  width: 220%;
-  height:au;
+ height: 0PX;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
@@ -332,14 +329,14 @@ right: 3%;
 @media screen and (max-width: 375px) {
   .contair-pransipal {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.091);
+    background-color: rgb(0, 0, 0);
     gap: 10px;
     width: 900px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .container-changement {
-    height: 16rem;
+
     width: 100%;
     
   }
