@@ -2,10 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
   font-family: "Fira Sans Extra Condensed", sans-serif;
+  background-color: black;
 }
 
 * {
   font-family: myFirstFont;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .navbar {
@@ -47,6 +54,9 @@ body {
   font-family: "Fira Sans Extra Condensed", serif;
   font-weight: 500;
   font-style: normal;
+  background-image: url(/assets/images/[4K]\ Palm\ Tree\ Loop\ -\ Glowing\ Tubes\ -\ SICK\ Visuals.mp4);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 form {
   margin-left: 300px;
@@ -154,7 +164,6 @@ form {
 
 .contair-pransipal {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.091);
   gap: 10px;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -162,28 +171,26 @@ form {
 .container-changement {
   height: 45.4rem;
   width: 30rem;
-  background-color: red;
   
 }
 .imge-bg {
   z-index: -1;
   position: relative;
   display: flex;
-  background: #000;
+  background: #a48b8b00;
 }
 
 .cart {
   width: 7rem;
   height: 8.5rem;
-  background-color: rgb(194, 132, 51);
   background-image: url(/assets/images/badge_gold.webp);
   background-size: cover;
   padding-bottom: 10px;
 }
 .attack {
   padding: 10px;
+  height: 10.4rem;
   width: 98%;
-  background-color: rgba(0, 255, 255, 0.416);
   display: flex;
 
   justify-content: space-evenly;
@@ -191,30 +198,36 @@ form {
 .cm {
   padding: 10px;
   width: 98%;
-  background-color: rgba(27, 102, 17, 0.416);
+  height: 10.4rem;
   display: flex;
   justify-content: space-evenly;
 }
-.df {
-  padding: 10px;
+.df{
   width: 98%;
-  background-color: rgba(0, 255, 255, 0.416);
+  height: 10.4rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
+
 .GK {
   padding: 10px;
-  width: 98%;
-  background-color: rgba(0, 255, 255, 0.416);
+  width: auto;
+  height: 12.8rem;
   display: flex;
   justify-content: space-evenly;
 }
+.dfr{
+  padding: 10px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .container-cart {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #0000002e;
   display: flex;
   display: block;
   gap: 10px;
@@ -225,7 +238,8 @@ form {
   height:au;
   display: flex;
   flex-wrap: wrap;
-  background-color: #000000;
+  justify-content:space-around;
+  row-gap: 10px;
 }
 
 
@@ -236,9 +250,10 @@ background-image: url(/assets/images/badge_gold.webp);
 background-size: contain;
 background-repeat: no-repeat;
 background-color: #d14141;
+border: gold solid 2px;
  width: 180px;
  padding: 2%;
-  margin: 10px;
+ 
   animation-name:  infiniteupdown;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -263,7 +278,6 @@ background-color: #d14141;
     position: relative;
     top:2px;
     width: fit-content;
-  
 right: 3%;    
   }
 
@@ -327,7 +341,6 @@ right: 3%;
   .container-changement {
     height: 16rem;
     width: 100%;
-    background-color: red;
     
   }
   .navbar {
@@ -341,3 +354,88 @@ right: 3%;
   }
   
 }
+
+.olcardS{
+  width: 8rem;
+  height: 9.5rem;
+
+  background-image: url(/assets/images/badge_gold.webp);
+  background-size: cover;
+  padding-bottom:15px;
+  }
+  
+  .btn2{  
+    background: rgb(200, 209, 152);
+    align-items: end;
+    width:10%;
+    height: 2rem;
+
+    
+
+    }
+    .just-carte{
+      display: block;
+      width: 7rem;
+      margin-top: 44px;
+
+    
+    }
+  
+  .card-headere{
+   position: absolute;
+   margin-left: 14px;
+
+  }
+  .player-statse{
+    display: flex;
+    width: 70%;
+    height: 1rem;
+    justify-content: center;
+    margin-left: 17%;
+
+  
+  }
+  .player-namee{
+    text-align: center;
+    font-size: 70%;
+  }
+  
+  .player-imagee{
+    height: 4.2rem;
+
+  }
+  .player-imagee img{
+    width: 60%;
+    margin-left:28%;   
+
+  }
+  .card-footere{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+  }
+  
+  .logoe img{
+   width: 9px;
+  }
+  
+  .state{
+    text-align: center;
+    font-size:50%;
+    width: 11%;
+    height: 20px;
+    margin: 5%;  
+  }
+  .container-changement{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    background-color: #716767a1;
+  }
+  .container-changement .olcardS{
+    height: 11.2rem;
+  }
+  
+
+  

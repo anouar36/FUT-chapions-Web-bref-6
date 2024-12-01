@@ -19,9 +19,13 @@
       </div>
     </nav>
     <section>
+      
       <div class="container-pr">
+        
         <div class="container-tairan">
+          
           <div class="butoonAddplayers">
+            
             <button id="addp" class="btn2" type="button" onclick="addp()">
               Add Plyaers
             </button>
@@ -62,12 +66,24 @@
               </div>
               <div class="input">
                 <label for="position">PAOSITION:</label>
-                <input
-                  class="input1"
-                  type="number"
-                  id="position"
-                  RANCK="user_number"
-                />
+                <select id="position"  class="input1" name="cars" id="cars">
+                  <option value="CF">CF</option>
+                  <option value="LWF">LWF</option>
+                  <option value="RWF">RWF</option>
+                  <option value="CM2">CM2</option>
+                  <option value="CM1">CM1</option>
+                  <option value="DMF">DMF</option>
+                  <option value="CB1">CB1</option>
+                  <option value="CB2">CB2</option>
+                  <option value="RB">RB</option>
+                  <option value="LB">LB</option>
+                  <option value="GK">GK</option>
+
+
+
+
+
+                </select>
               </div>
 
               <div id="inputImges" class="input">
@@ -121,7 +137,7 @@
             <div class="DEV2">
               <div class="input2">
                 <label for="pac">PAC:</label>
-                <input class="in2" type="text" id="pac" name="user_name" />
+                <input class="in2" type="number" id="pac" name="user_name" />
               </div>
 
               <div class="input2">
@@ -147,7 +163,7 @@
                 <input class="in2" type="number" id="phy" RANCK="user_number" />
               </div>
             </div>
-            <button class="submi" type="button" onclick="addInLocal(),altt() ">
+            <button class="submi" type="button" onclick="addInLocal(), verfiction() ">
               SEND
             </button>
           </form>
@@ -156,65 +172,72 @@
 
 <div class="contair-pransipal">
   
+  
  
 <div class="imge-bg">
  <img src="/assets/images/field-bg.svg" alt="" />
 
  <div class="container-cart">
   <div class="attack">
- <div>
+ <div id="LWF" class="dfr">
   <div class="cart"></div>
  </div>
- <div>
+
+ <div id="CF" class="dfr">
   <div class="cart"></div>
  </div>
- <div>
+
+ <div id="RWF" class="dfr">
   <div class="cart"></div>
  </div>
 </div>
+
 <div class="cm">
-  <div>
+
+  <div id="CM1" class="dfr">
    <div class="cart"></div>
   </div>
-  <div>
+
+  <div id="DMF" class="dfr">
    <div class="cart"></div>
   </div>
-  <div>
+
+  <div id="CM2" class="dfr">
    <div class="cart"></div>
   </div>
  </div>
+
  <div class="df">
-  <div>
+  <div id="LB" class="dfr">
    <div class="cart"></div>
   </div>
-  <div>
+
+  <div  id="CB1" class="dfr">
    <div class="cart"></div>
   </div>
-  <div>
+
+  <div  id="CB2" class="dfr" >
    <div class="cart"></div>
   </div>
-  <div>
-    <div class="cart"></div>
+
+  <div id="RB" class="dfr" >
+    <div  class="cart"></div>
    </div>
  </div>
- <div class="GK">
+
+ <div id="GK" class="GK ">
+  <div>
+    <div class="cart ">  </div>
+   </div>
+ </div>
+</div>
+</div>
+<div id="containerChangement" class="container-changement">  
   
-  <div>
-    <div class="cart"></div>
-   </div>
- </div>
 </div>
-</div>
-<div class="container-changement"></div>
 <div id="container-ollPlyers" class="container-ollPlyers"></div>
 
 </div>
-
-
-         
-
-          
-       
     </section>
 
     <script src="/assets/js/index.js"></script>
