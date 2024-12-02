@@ -8,14 +8,27 @@ const nameRegex = /^[A-Za-z][A-Za-z ]{0,19}$/;
 const ageRegex = /^(1[8-9]|[2-4][0-9]|5[0-5])$/;
 const rankRegex = /^(3[0-9]|[4-9][0-9])$/;
 
+// GET CART FOR PALYERS POSITION 
+const gk = document.getElementById("GK");
+const cb1 = document.getElementById("CB1");
+const cb2 = document.getElementById("CB2");
+const lb = document.getElementById("LB");
+const rb = document.getElementById("RB");
+const cm1 = document.getElementById("CM1");
+const cf = document.getElementById("CF");
+const rwf = document.getElementById("RWF");
+const lwf = document.getElementById("LWF");
+const dmf = document.getElementById("DM");
+const cm2 = document.getElementById("CM2");
+
 function butNonForm() {
   const formul = document.getElementById("formul");
   console.log(formul);
   formul.classList.add("DN");
   console.log();
 }
-function addp() {
-  var addFormul = document.getElementById("addp");
+function dsplayeForm() {
+  var addFormul = document.getElementById("desplform");
   const formul = document.getElementById("formul");
   formul.classList.remove("DN");
   console.log();
@@ -39,7 +52,11 @@ function verfiction() {
 }
 
 // add object for form
-let arrDataPlyers = [];
+
+
+// let arrDataPlyers = [];
+let getdat = localStorage.getItem("values");
+let dataLoc = JSON.parse(getdat);
 function addInLocal() {
   const palyerss = {
     Name: document.getElementById("nameR").value,
@@ -56,9 +73,13 @@ function addInLocal() {
     ranck: document.getElementById("ranck").value,
     agelanguages: document.getElementById("age").value,
   };
-  arrDataPlyers.push(palyerss);
-  localStorage.setItem("values", JSON.stringify(arrDataPlyers));
+  dataLoc.push(palyerss)
+  // arrDataPlyers.push(palyerss);
+  localStorage.setItem("values", JSON.stringify(dataLoc));
   console.log(localStorage.getItem("values"));
+}
+
+
   function dsplyFeomloclal() {
     let getdat = localStorage.getItem("values");
     let dataLoc = JSON.parse(getdat);
@@ -93,23 +114,15 @@ function addInLocal() {
         </div>
         </div>`;
 
-        const gk = document.getElementById("GK");
-        const cb1 = document.getElementById("CB1");
-        const cb2 = document.getElementById("CB2");
-        const lb = document.getElementById("LB");
-        const rb = document.getElementById("RB");
-        const cm1 = document.getElementById("CM1");
-        const cf = document.getElementById("CF");
-        const rwf = document.getElementById("RWF");
-        const lwf = document.getElementById("LWF");
-        const dmf = document.getElementById("DM");
-        const cm2 = document.getElementById("CM2");
+       
 
         if (player.position === "GK" && !gk.classList.contains("full")) {
           gk.classList.remove("cart");
           gk.classList.add("full");
           gk.innerHTML = htmltxte;
         } else if (player.position === "CB1" && !cb1.classList.contains("full")){
+          console.log(player.position);
+          
           cb1.classList.remove("cart");
           cb1.classList.add("full");
           cb1.innerHTML = htmltxte;
@@ -162,7 +175,7 @@ function addInLocal() {
     dsplyPlyer();
   }
   dsplyFeomloclal();
-}
+
 
 
 
