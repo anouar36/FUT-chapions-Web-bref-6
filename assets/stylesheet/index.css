@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
   font-family: "Fira Sans Extra Condensed", sans-serif;
-  background-color: rgb(223, 0, 0);
+  background-color: #1F2544;
   font-family: "Fira Sans Extra Condensed", serif;
   font-weight: 500;
   font-style: normal;
@@ -25,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b9c1ca;
+  background-color: #474F7A;
   padding: 10px 20px;
   color: white;
 }
@@ -55,10 +55,9 @@ body {
 
 form {
   margin-left: 300px;
-  background-image: url(/assets/images/fifa-mobile-grid-tile-season-5-16x9-1.jpg.adapt.crop191x100.1200w.png);
-  background-size: cover;
+  background-color: #474f7a;  background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
+  width: 350px;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -91,7 +90,7 @@ form {
 }
 .input1 {
   border-radius: 3px;
-  background-color: brown;
+  background-color: #f9f9f9;
   flex-wrap: wrap;
   width: 100%;
   height: 40%;
@@ -100,28 +99,7 @@ form {
   width: 60px;
   box-shadow: 20px 10px 20px 20px rgb(119, 114, 114) inset;
 }
-#iimage {
-  background-color: aqua;
-  width: 12px;
-  display: none;
-}
-#inputImges {
-  width: 300px;
-  display: flex;
-  column-gap: 30px;
-}
-#iimage2 {
-  background-color: aqua;
-  width: 12px;
-  display: none;
-}
-#inputImges2 {
-  width: 300px;
-  display: flex;
-  column-gap: 30px;
-}
-#iimage3 {
-  background-color: aqua;
+#image {
   width: 12px;
   display: none;
 }
@@ -179,14 +157,13 @@ height: 2px;
 .cart {
   width: 7rem;
   height: 8.5rem;
-  background-image: url(/assets/images/badge_gold.webp);
   background-size: cover;
   padding-bottom: 10px;
-  background: #000;
+  
 }
 .attack {
   padding: 10px;
-  height: 10.4rem;
+  height: 10.9rem;
   width: 98%;
   display: flex;
 
@@ -195,30 +172,35 @@ height: 2px;
 .cm {
   padding: 10px;
   width: 98%;
-  height: 10.4rem;
+  height: 10.9rem;
   display: flex;
   justify-content: space-evenly;
 }
 .df{
   width: 98%;
-  height: 10.4rem;
-  display: flex;
+  height: 11rem;  display: flex;
   justify-content: space-around;
-}
 
-.GK {
+}
+.GK{
   padding: 10px;
-  width: auto;
-  height: 12.8rem;
+  height: 11.2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .dfr{
   padding: 10px;
-  width: auto;
+  width: 110px;
   display: flex;
   justify-content: space-around;
-  background-color: #d14141;
+  background-size: cover;
+  background-image: url(/assets/images/Design\ sans\ titre\ \(1\)\ \(1\).svg);
+
+  
+}
+.dfr:hover{
+  background-color:#ffd0ec81 ;
+  
 }
 
 
@@ -232,37 +214,29 @@ height: 2px;
   justify-content: space-evenly;
 }
 .container-ollPlyers{
- height: 0PX;
+  height: 0PX;
+  width: 70%;
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
-  row-gap: 10px;
+  row-gap: 20px;
 }
 
 
 
 /* this for cart */
 .olcard{
-background-image: url(/assets/images/badge_gold.webp); 
-background-size: contain;
+background-image: url(/assets/images/Design\ sans\ titre\ \(1\)\ \(1\).svg); 
+background-size: cover;
 background-repeat: no-repeat;
-background-color: #d14141;
-border: gold solid 2px;
- width: 180px;
- padding: 2%;
- 
-  animation-name:  infiniteupdown;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function:  ease;
-  transition: all .1s;
-  position:inherit;
-  bottom: 650px;
-  left: 4%;
-
+width: 140px; 
+height: 195px;
+position: relative;
+bottom: 30px;
+right: 16px;
 }
 .btn2{  
-  background: rgb(212, 255, 0);
   align-items: end;
   width:10%;
   height: 2rem;
@@ -273,24 +247,20 @@ border: gold solid 2px;
   .just-cart{
     display: block;
     position: relative;
-    top:2px;
-    width: fit-content;
-right: 3%;    
+    margin: auto;
+    width: 90%;
+  
   }
 
 .card-header{
+  position: absolute;
+  margin-top: 19%;
+  left: 10px;
 
-  height: 40px;
- width: 40px;
- position: absolute;
- margin-top: 15%;
 }
 .player-stats{
   display: flex;
-  
-  height: 20px;
   justify-content: center;
-
 }
 .player-name{
   text-align: center;
@@ -298,14 +268,22 @@ right: 3%;
 }
 
 .player-image{
- margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
 }
+
+
 .card-footer{
 
   display: flex;
   height: 15px;
   justify-content: center;
   justify-content: space-evenly;
+}
+.logo{
+  margin-left: 10px;
+
 }
 .logo img{
   width: 12px;
@@ -352,14 +330,10 @@ right: 3%;
   
 }
 
-.olcardS{
-  width: 8rem;
-  height: 9.5rem;
 
-  background-image: url(/assets/images/badge_gold.webp);
-  background-size: cover;
-  padding-bottom:15px;
-  }
+
+/* this desin for cart in tairan */
+
   
   .btn2{  
     background: rgb(200, 209, 152);
@@ -372,67 +346,115 @@ right: 3%;
     }
     .just-carte{
       display: block;
-      width: 7rem;
-      margin-top: 44px;
-
-    
+      width: 6.6rem;
+      position: relative;
     }
   
   .card-headere{
    position: absolute;
-   margin-left: 14px;
+   margin-top: 7px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   top: 10px;;
 
   }
   .player-statse{
     display: flex;
-    width: 70%;
-    height: 1rem;
     justify-content: center;
-    margin-left: 17%;
+    justify-content: space-between;
 
   
   }
   .player-namee{
     text-align: center;
-    font-size: 70%;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   }
   
   .player-imagee{
-    height: 4.2rem;
-
+display: flex;
+justify-content: end;
+width: 100%;
   }
   .player-imagee img{
-    width: 60%;
-    margin-left:28%;   
-
+    width: 86%;
   }
   .card-footere{
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+    height: 100%;
 
   }
   
   .logoe img{
-   width: 9px;
+   width: 20px;
   }
   
   .state{
     text-align: center;
-    font-size:50%;
-    width: 11%;
-    height: 20px;
-    margin: 5%;  
+    color: #eef0f2;
+    font-size:50%; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+      
   }
+
+
+
+
   .container-changement{
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
-    background-color: #716767a1;
+    height: min 1rem; ;
+    background-color: #474F7A;
+    gap: 26px;
   }
-  .container-changement .olcardS{
-    height: 11.2rem;
+  .container-changement .olcards{
+    background-image: url(/assets/images/Design\ sans\ titre\ \(1\)\ \(1\).svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px; 
+    height: 218px;
   }
+  .container-changement .just-carte{
+  width: 90%;
+  position: relative;
+  top: 10px;
+  left: 9px;
   
+  }
+  .container-changement .player-statse{
+    width:100%;
+    left: 100px;
+  }  
+  .container-changement .player-statse .state{
+    width:100%;
+    left: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  }  
+  .container-changement .card-headere{
+    top: 20px;
+    left: 10px;
+    color: wheat;
+    width: 94%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+  } 
+  .container-changement .player-namee{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+  }  
+  .olcards{
+       
+
+  }
+  #RB .stat{
+
+  }
+
+  /* THIS FOR CART GK  */
+
 
   

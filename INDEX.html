@@ -68,7 +68,7 @@
                   <option value="RWF">RWF</option>
                   <option value="CM2">CM2</option>
                   <option value="CM1">CM1</option>
-                  <option value="DMF">DMF</option>
+                  <option value="DM">DMF</option>
                   <option value="CB1">CB1</option>
                   <option value="CB2">CB2</option>
                   <option value="RB">RB</option>
@@ -78,46 +78,31 @@
               </div>
 
               <div id="inputImges" class="input">
-                <label for="iimage"
-                  ><img
-                    class="img"
-                    id="selectimge"
-                    src="/assets/images/add-image-1-128.png"
-                    alt=""
-                /></label>
+                
                 <input
-                  type="file"
+                  type="url"
                   id="iimage"
+                  class="iimage"
                   name="fileInput"
                   accept="image/*"
                   onchange="handelChange()"
                 />
 
-                <label for="iimage2"
-                  ><img
-                    id="selectimge2"
-                    class="img"
-                    src="/assets/images/add-image-1-128.png"
-                    alt=""
-                /></label>
+                
                 <input
-                  type="file"
+                  type="url"
                   id="iimage2"
+                  class="iimage"
                   name="fileInput2"
                   accept="image/*"
                   onchange="handelChang()"
                 />
 
-                <label for="iimage3"
-                  ><img
-                    id="selectim3"
-                    class="img"
-                    src="/assets/images/add-image-1-128.png"
-                    alt=""
-                /></label>
+                
                 <input
-                  type="file"
+                  type="url"
                   id="iimage3"
+                  class="iimage"
                   name="fileInput3"
                   accept="image/*"
                   onchange="handelChan()"
@@ -187,7 +172,7 @@
                     <div class="cart" onclick="slector1(this)"></div>
                   </div>
 
-                  <div id="DMF" class="dfr">
+                  <div id="DM" class="dfr">
                     <div class="cart" onclick="slector1(this)"></div>
                   </div>
 
@@ -211,9 +196,9 @@
                     <div class="cart" onclick="slector1(this)"></div>
                   </div>
                 </div>
-<div id="GK" >
-                <div onclick="slector1(this)" class="GK">
-                  <div class="cart" >
+                  <div class="GK" >
+                <div id="GK" class="dfr">
+                  <div class="cart" onclick="slector1(this)" >
                   </div>
                 </div>
                 </div>
@@ -227,5 +212,6 @@
     </section>
 
     <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/fetch.js"></script>
   </body>
 </html>

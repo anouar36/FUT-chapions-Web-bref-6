@@ -49,6 +49,22 @@
         "physical": 78
       },
       {
+        "name": "Sofyan Amrabat",
+        "photo": "https://cdn3.futbin.com/content/fifa25/img/players/224158.png?fm=png&ixlib=java-2.1.0&verzion=1&w=100&s=5a9401e9e71474dde21eceba3447d7e4",
+        "position": "DM",
+        "nationality": "Morocco",
+        "flag": "https://cdn.sofifa.net/flags/ma.png",
+        "club": "Manchester United",
+        "logo": "https://cdn.sofifa.net/meta/team/11/60.png",
+        "rating": 84,
+        "pace": 75,
+        "shooting": 67,
+        "passing": 78,
+        "dribbling": 80,
+        "defending": 84,
+        "physical": 87
+      },
+      {
         "name": "Kylian Mbappé",
         "photo": "https://cdn.sofifa.net/players/231/747/25_120.png",
         "position": "CF",
